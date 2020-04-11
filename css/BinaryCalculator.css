@@ -1,0 +1,37 @@
+#res{
+    font-size: 20px;
+}
+
+#btns>button{
+    width: 5.2em;
+    height: 3em;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.card{
+    top: 3em;
+    width: 23em;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.btn{
+    border-radius: 15px;
+}
+.btn-yellow{
+    background-color: #ff9f0a;
+    color: white;
+}
+
+@media screen and (max-width: 1700px) {
+    .heading{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .heading{
+        font-size: 2em;
+    }
+}

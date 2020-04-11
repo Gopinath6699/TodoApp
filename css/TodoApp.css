@@ -1,0 +1,25 @@
+
+#input-task{
+    width: 45em;
+}
+
+#add-btn{
+    width: 6em;
+}
+
+
+.list-group-item-action{ 
+    animation: fadeInAnimation ease 0.8s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+     } 
+} 
+

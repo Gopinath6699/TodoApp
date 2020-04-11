@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/TodoApp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="100x100">
+
+</head>
+<body class="progress-bar progress-bar-striped progress-bar-animated bg-info">
+    <div class="d-flex flex-row justify-content-center mt-5">
+        <div class="card text-dark mb-3 mt-5 shadow bg-light rounded" style="max-width: 70em;">
+            <div class="card-header bg-light">
+                <div class="text-center h3 mt-3">TODO APPLICATION</div><br>
+                <form>
+                    <div class="d-flex form-inline" id="get-input">
+                        <input class="form-control mr-3 mb-4 " type="text" name="task-input" id="input-task" placeholder="New Task">
+                        <button type="submit" id="add-btn" class="btn btn-info mb-4">Add</button>
+                    </div>
+                </form>  
+            </div>
+            <div class="card-body bg-light m-4">
+               <div class="list-group add-task" id="mainCard"> 
+               <!--
+                   <a href="#" class="list-group-item list-group-item-action"><div class="d-flex custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="task1">
+                    <label class="custom-control-label px-5 mr-5" for="task1">Complete JavaScript Course </label>
+                    <button class="btn btn-sm btn-danger ml-auto" href="#"><i class="fa fa-trash mr-2"></i> Delete</button>
+                  </div></a>
+                -->
+                </div> 
+            </div>
+          </div>
+    </div>
+
+    <script src="js/TodoApp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js" type="module"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
+    
+</body>
+</html>
