@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/TodoApp.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="100x100" />
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+  </head>
+  <body class="progress-bar progress-bar-striped progress-bar-animated bg-info">
+    <div class="d-flex flex-row justify-content-center mt-5">
+      <div
+        class="card text-dark mb-3 mt-5 shadow bg-light rounded shadow-lg"
+        style="max-width: 70em;"
+      >
+        <div class="card-header bg-light">
+          <div class="text-center h3 mt-3">TODO APPLICATION</div>
+          <br />
+          <form>
+            <div class="d-flex form-inline" id="get-input">
+              <input
+                class="form-control mr-3 mb-4"
+                type="text"
+                name="task-input"
+                id="input-task"
+                placeholder="New Task"
+                autocomplete="off"
+              />
+              <button type="submit" id="add-btn" class="btn btn-info mb-4">
+                Add
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="card-body bg-light m-4">
+          <div class="d-flex form-inline task_monitor"></div>
+          <div class="list-group add-task" id="mainCard"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js"
+      type="module"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
+    <script src="js/TodoApp.js"></script>
+    <script>
+      viewDetails();
+    </script>
+  </body>
+</html>

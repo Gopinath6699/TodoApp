@@ -1,0 +1,58 @@
+@media screen and (max-width: 1700px) {
+  #input-task {
+    width: 45em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #input-task {
+    width: 30em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #input-task {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #input-task {
+    width: 18.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #input-task {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #input-task {
+    width: 15em;
+  }
+}
+
+#add-btn {
+  width: 6em;
+}
+
+.card {
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.list-group-item-action {
+  animation: fadeInAnimation ease 0.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
